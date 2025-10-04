@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Smart Study Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <button class="menu-btn" id="menu-btn">☰</button>
+    <div class="dropdown" id="dropdown">
+      <a href="#" id="profile-btn">Profile</a>
+      <a href="#" id="settings-btn">Settings</a>
+      <a href="#" id="logout-btn">Logout</a>
+      <a href="#" id="close-dropdown">Close</a>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="dashboard-container">
+    <!-- Welcome Box -->
+    <div class="welcome-box">
+      <h1>Welcome Back, <span id="user-name">Student</span> 👋</h1>
+      <p id="motivation-text"></p>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards-container" id="cards">
+      <a href="studyplan.html" class="card">
+        📘 <h3>My Study Sessions</h3>
+        <p>View and manage your planned sessions.</p>
+      </a>
+      <a href="addschedule.html" class="card">
+        📅 <h3>Add Schedule</h3>
+        <p>Create new tasks and study timelines.</p>
+      </a>
+      <a href="progress.html" class="card">
+        📊 <h3>Progress Tracker</h3>
+        <p>Check your completion rate and performance.</p>
+      </a>
+    </div>
+
+    <!-- Profile / Settings -->
+    <div id="profile-container"></div>
+    <div id="settings-container"></div>
+  </div>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

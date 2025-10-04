@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracker - Smart Study Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/progress.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Progress Tracker</h1>
+    <button id="back-btn">← Back</button>
+  </div>
+
+  <!-- Progress Container -->
+  <div class="progress-container">
+    <h2>Overall Progress</h2>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <p id="progress-text">0% completed</p>
+
+    <h3>Pending Sessions</h3>
+    <ul id="pending-sessions"></ul>
+
+    <h3>Completed Sessions</h3>
+    <ul id="completed-sessions"></ul>
+  </div>
+
+  <script src="../js/progress.js"></script>
+</body>
+</html>
